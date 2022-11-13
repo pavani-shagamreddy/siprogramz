@@ -1,0 +1,20 @@
+b=input()
+n=len(b)
+d={}
+d[10]='+'
+d[11]='-'
+d[12]='*'
+d[13]='/'
+i=0
+t=""
+while(i<n):
+    k=int(b[i:i+4],2)
+    if k in d:
+        print(t)
+        print(d[k])
+        t=""
+    else:
+        t+=str(k)
+    i+=4
+if(t!=""):
+    print(t)

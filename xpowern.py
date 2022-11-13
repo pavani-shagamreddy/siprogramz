@@ -1,0 +1,10 @@
+x=int(input())
+n=int(input())
+ans=1
+while(n!=0):
+    if(n&1==1):
+        ans=ans*x
+        n-=1
+    x*=x
+    n=n>>1
+print(ans)
