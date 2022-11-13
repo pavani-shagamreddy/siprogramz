@@ -1,3 +1,5 @@
+"""ibm code"""
+
 n=int(input())
 if(n<=11):
     print("0")
